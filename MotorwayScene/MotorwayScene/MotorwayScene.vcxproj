@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{818F89D7-198B-4FAA-A435-31B8824B9213}</ProjectGuid>
+    <RootNamespace>MotorwayScene</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>MotorwayScene</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Configs\build_debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Configs\build_release.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Configs\build_debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Configs\build_release.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>MotorwaySceneGL</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>MotorwaySceneGL</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libraries\Visual-Studio\stb-library;$(SolutionDir)Libraries\Visual-Studio\glm-0.9.8.5;$(SolutionDir)Libraries\Visual-Studio\glfw-3.3.2\include;$(SolutionDir)Libraries\Visual-Studio\glad-3.3\include;$(SolutionDir)Libraries\Visual-Studio\assimp-5.0.1\include;$(SolutionDir)MotorwayScene\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries\Visual-Studio\glfw-3.3.2\bin\static-x86\Debug;$(SolutionDir)Libraries\Visual-Studio\assimp-5.0.1\bin\static-x86\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libraries\Visual-Studio\stb-library;$(SolutionDir)Libraries\Visual-Studio\glm-0.9.8.5;$(SolutionDir)Libraries\Visual-Studio\glfw-3.3.2\include;$(SolutionDir)Libraries\Visual-Studio\glad-3.3\include;$(SolutionDir)Libraries\Visual-Studio\assimp-5.0.1\include;$(SolutionDir)MotorwayScene\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries\Visual-Studio\glfw-3.3.2\bin\static-x64\Debug;$(SolutionDir)Libraries\Visual-Studio\assimp-5.0.1\bin\static-x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libraries\Visual-Studio\stb-library;$(SolutionDir)Libraries\Visual-Studio\glm-0.9.8.5;$(SolutionDir)Libraries\Visual-Studio\glfw-3.3.2\include;$(SolutionDir)Libraries\Visual-Studio\glad-3.3\include;$(SolutionDir)Libraries\Visual-Studio\assimp-5.0.1\include;$(SolutionDir)MotorwayScene\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries\Visual-Studio\glfw-3.3.2\bin\static-x86\Release;$(SolutionDir)Libraries\Visual-Studio\assimp-5.0.1\bin\static-x86\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libraries\Visual-Studio\stb-library;$(SolutionDir)Libraries\Visual-Studio\glm-0.9.8.5;$(SolutionDir)Libraries\Visual-Studio\glfw-3.3.2\include;$(SolutionDir)Libraries\Visual-Studio\glad-3.3\include;$(SolutionDir)Libraries\Visual-Studio\assimp-5.0.1\include;$(SolutionDir)MotorwayScene\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries\Visual-Studio\glfw-3.3.2\bin\static-x64\Release;$(SolutionDir)Libraries\Visual-Studio\assimp-5.0.1\bin\static-x64\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\Core\AppCore.cpp" />
+    <ClCompile Include="Src\Core\CameraObject.cpp" />
+    <ClCompile Include="Src\Core\OrthogonalCamera.cpp" />
+    <ClCompile Include="Src\Core\PerspectiveCamera.cpp" />
+    <ClCompile Include="Src\Graphics\BufferObjects.cpp" />
+    <ClCompile Include="Src\Graphics\CubemapComponent.cpp" />
+    <ClCompile Include="Src\Graphics\ModelObject.cpp" />
+    <ClCompile Include="Src\Graphics\ObjectRenderer.cpp" />
+    <ClCompile Include="Src\Graphics\SceneLighting.cpp" />
+    <ClCompile Include="Src\Graphics\ShaderProgram.cpp" />
+    <ClCompile Include="Src\Graphics\TextureComponent.cpp" />
+    <ClCompile Include="Src\Graphics\VertexArray.cpp" />
+    <ClCompile Include="Src\Scripts\PostProcessing.cpp" />
+    <ClCompile Include="Src\Scripts\Player.cpp" />
+    <ClCompile Include="Src\Scripts\ShadowGeneration.cpp" />
+    <ClCompile Include="Src\Scripts\WorldScene.cpp" />
+    <ClCompile Include="Src\Utils\LoggingManager.cpp" />
+    <ClCompile Include="Src\Core\WindowFrame.cpp" />
+    <ClCompile Include="Src\External\glad.c" />
+    <ClCompile Include="Src\External\stb_image.cpp" />
+    <ClCompile Include="Src\Main.cpp" />
+    <ClCompile Include="Src\Utils\RandomGenerator.cpp" />
+    <ClCompile Include="Src\Utils\ResourceManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\Core\AppCore.h" />
+    <ClInclude Include="Src\Core\CameraObject.h" />
+    <ClInclude Include="Src\Core\OrthogonalCamera.h" />
+    <ClInclude Include="Src\Core\PerspectiveCamera.h" />
+    <ClInclude Include="Src\Graphics\BufferObjects.h" />
+    <ClInclude Include="Src\Graphics\CubemapComponent.h" />
+    <ClInclude Include="Src\Graphics\ModelObject.h" />
+    <ClInclude Include="Src\Graphics\ObjectRenderer.h" />
+    <ClInclude Include="Src\Graphics\SceneLighting.h" />
+    <ClInclude Include="Src\Graphics\TextureComponent.h" />
+    <ClInclude Include="Src\Graphics\VertexArray.h" />
+    <ClInclude Include="Src\Scripts\PostProcessing.h" />
+    <ClInclude Include="Src\Scripts\Player.h" />
+    <ClInclude Include="Src\Scripts\ShadowGeneration.h" />
+    <ClInclude Include="Src\Scripts\WorldScene.h" />
+    <ClInclude Include="Src\Utils\LoggingManager.h" />
+    <ClInclude Include="Src\Graphics\ShaderPrograms.h" />
+    <ClInclude Include="Src\Core\WindowFrame.h" />
+    <ClInclude Include="Src\Utils\RandomGenerator.h" />
+    <ClInclude Include="Src\Utils\ResourceManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Src\Graphics\VertexArray.tpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

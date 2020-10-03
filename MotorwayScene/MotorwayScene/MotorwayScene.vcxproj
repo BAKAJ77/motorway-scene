@@ -94,12 +94,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Libraries\Visual-Studio\stb-library;$(SolutionDir)Libraries\Visual-Studio\glm-0.9.8.5;$(SolutionDir)Libraries\Visual-Studio\glfw-3.3.2\include;$(SolutionDir)Libraries\Visual-Studio\glad-3.3\include;$(SolutionDir)Libraries\Visual-Studio\assimp-5.0.1\include;$(SolutionDir)MotorwayScene\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libraries\stb-library;$(SolutionDir)Libraries\glm-0.9.8.5;$(SolutionDir)Libraries\glfw-3.3.2\include;$(SolutionDir)Libraries\glad-3.3\include;$(SolutionDir)Libraries\assimp-5.0.1\include;$(SolutionDir)MotorwayScene\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)Libraries\Visual-Studio\glfw-3.3.2\bin\static-x86\Debug;$(SolutionDir)Libraries\Visual-Studio\assimp-5.0.1\bin\static-x86\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries\glfw-3.3.2\bin\static-x86\Debug;$(SolutionDir)Libraries\assimp-5.0.1\bin\static-x86\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -109,12 +109,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Libraries\Visual-Studio\stb-library;$(SolutionDir)Libraries\Visual-Studio\glm-0.9.8.5;$(SolutionDir)Libraries\Visual-Studio\glfw-3.3.2\include;$(SolutionDir)Libraries\Visual-Studio\glad-3.3\include;$(SolutionDir)Libraries\Visual-Studio\assimp-5.0.1\include;$(SolutionDir)MotorwayScene\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libraries\stb-library;$(SolutionDir)Libraries\glm-0.9.8.5;$(SolutionDir)Libraries\glfw-3.3.2\include;$(SolutionDir)Libraries\glad-3.3\include;$(SolutionDir)Libraries\assimp-5.0.1\include;$(SolutionDir)MotorwayScene\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)Libraries\Visual-Studio\glfw-3.3.2\bin\static-x64\Debug;$(SolutionDir)Libraries\Visual-Studio\assimp-5.0.1\bin\static-x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries\glfw-3.3.2\bin\static-x64\Debug;$(SolutionDir)Libraries\assimp-5.0.1\bin\static-x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -126,14 +126,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Libraries\Visual-Studio\stb-library;$(SolutionDir)Libraries\Visual-Studio\glm-0.9.8.5;$(SolutionDir)Libraries\Visual-Studio\glfw-3.3.2\include;$(SolutionDir)Libraries\Visual-Studio\glad-3.3\include;$(SolutionDir)Libraries\Visual-Studio\assimp-5.0.1\include;$(SolutionDir)MotorwayScene\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libraries\stb-library;$(SolutionDir)Libraries\glm-0.9.8.5;$(SolutionDir)Libraries\glfw-3.3.2\include;$(SolutionDir)Libraries\glad-3.3\include;$(SolutionDir)Libraries\assimp-5.0.1\include;$(SolutionDir)MotorwayScene\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)Libraries\Visual-Studio\glfw-3.3.2\bin\static-x86\Release;$(SolutionDir)Libraries\Visual-Studio\assimp-5.0.1\bin\static-x86\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries\glfw-3.3.2\bin\static-x86\Release;$(SolutionDir)Libraries\assimp-5.0.1\bin\static-x86\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -145,14 +145,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Libraries\Visual-Studio\stb-library;$(SolutionDir)Libraries\Visual-Studio\glm-0.9.8.5;$(SolutionDir)Libraries\Visual-Studio\glfw-3.3.2\include;$(SolutionDir)Libraries\Visual-Studio\glad-3.3\include;$(SolutionDir)Libraries\Visual-Studio\assimp-5.0.1\include;$(SolutionDir)MotorwayScene\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libraries\stb-library;$(SolutionDir)Libraries\glm-0.9.8.5;$(SolutionDir)Libraries\glfw-3.3.2\include;$(SolutionDir)Libraries\glad-3.3\include;$(SolutionDir)Libraries\assimp-5.0.1\include;$(SolutionDir)MotorwayScene\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)Libraries\Visual-Studio\glfw-3.3.2\bin\static-x64\Release;$(SolutionDir)Libraries\Visual-Studio\assimp-5.0.1\bin\static-x64\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries\glfw-3.3.2\bin\static-x64\Release;$(SolutionDir)Libraries\assimp-5.0.1\bin\static-x64\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
